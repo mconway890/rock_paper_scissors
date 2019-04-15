@@ -1,0 +1,16 @@
+body {
+  margin-top: 50px;
+}
+.game-container {
+  max-width: 500px;
+  margin: auto;
+  text-align: center;
+}
+
+.button-container {
+  display: inline-flex;
+}
+
+.option button {
+  text-transform: uppercase;
+}
