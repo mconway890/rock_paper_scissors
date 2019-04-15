@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Rock, Paper, Scissors</title>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+</head>
+<style>
+  body {
+    margin-top: 50px;
+  }
+  .game-container {
+    max-width: 500px;
+    margin: auto;
+    text-align: center;
+  }
+
+  .button-container {
+    display: inline-flex;
+  }
+
+  .option button {
+    text-transform: uppercase;
+  }
+</style>
+
+<body>
+  <div class="game-container">
+    <div class="button-container">
+      <div id="rock" class="option">
+        <button class="w3-btn w3-border w3-xxlarge">Rock</button>
+      </div>
+      <div id="paper" class="option">
+        <button class="w3-btn w3-border w3-xxlarge">Paper</button>
+      </div>
+      <div id="scissors" class="option">
+        <button class="w3-btn w3-border w3-xxlarge">Scissor</button>
+      </div>
+    </div>
+    <div class="winnings">
+      <div class="result winBox">
+        <div class="pickContainer">
+          <span class="pickText"><strong>You:</strong> </span><span id="userPick"></span>
+        </div>
+        <div class="pickContainer">
+          <span class="pickText"><strong>Computer:</strong> </span><span id="compPick"></span>
+        </div>
+        <div class="clearfix"></div>
+        <div class="resultContainer">
+          <span id="overallResult">Click to play!</span>
+        </div>
+      </div>
+      <div class="scores winBox">
+        <h3>Score</h3>
+        <div class="userScore score-box">
+          User Score is now: <span id="userScore">0</span>
+        </div>
+        <div class="compScore score-box">
+          Computer Score is now: <span id="compScore">0</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="rock-paper-scissors.js"></script>
+</body>
+
+</html>
