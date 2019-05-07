@@ -14,3 +14,7 @@ body {
 .option button {
   text-transform: uppercase;
 }
+
+div.winnings {
+  text-align: left;
+}
