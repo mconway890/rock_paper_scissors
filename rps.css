@@ -1,6 +1,8 @@
 body {
   margin-top: 50px;
+  text-transform: uppercase;
 }
+
 .game-container {
   max-width: 500px;
   margin: auto;
@@ -12,6 +14,7 @@ body {
   position: relative;
   text-align: center;
   color: white;
+  border: 5px solid black;
 }
 
 .option button {
@@ -19,8 +22,14 @@ body {
 }
 
 div.winnings {
-  text-align: left;
-  padding-top: 50px;
+  text-align: center;
+  border: 1px solid black;
+  margin-top: 25px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 0px;
+  padding-bottom: 25px;
+  padding-top: 25px;
 }
 
 .centered-rock, .centered-paper, .centered-scissor {
@@ -33,4 +42,8 @@ div.winnings {
 
 .centered-scissor {
   font-size: large;
+}
+
+span#overallResult {
+  color: red;
 }
