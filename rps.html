@@ -10,44 +10,54 @@
 
 <body>
   <div class="game-container">
-    <div class="button-container">
+    <div class="button1-container">
       <div id="rock" class="option">
         <button class="w3-btn w3-border w3-xxlarge">
           <img src="images/rock.jpg" height="200" width="100">
+          <div class="centered-rock">ROCK</div>
         </button>
       </div>
+    </div>
+    <div class="button2-container">
       <div id="paper" class="option">
         <button class="w3-btn w3-border w3-xxlarge">
-          <img src="images/paper.jpg" height="200" width="100"></button>
+          <img src="images/paper.jpg" height="200" width="100">
+          <div class="centered-paper">PAPER</div>
+        </button>
       </div>
+    </div>
+    <div class="button3-container">
       <div id="scissors" class="option">
         <button class="w3-btn w3-border w3-xxlarge">
-          <img src="images/scissors.jpg" height="200" width="100"></button>
+          <img src="images/scissors.jpg" height="200" width="100">
+          <div class="centered-scissor">SCISSOR</div>
+        </button>
       </div>
     </div>
-    <div class="winnings">
-      <div class="result winBox">
-        <div class="pickContainer">
-          <span class="pickText"><strong>You:</strong> </span><span id="userPick"></span>
-        </div>
-        <div class="pickContainer">
-          <span class="pickText"><strong>Computer:</strong> </span><span id="compPick"></span>
-        </div>
-        <div class="clearfix"></div>
-        <div class="resultContainer">
-          <span id="overallResult">Click to play!</span>
-        </div>
+  </div>
+  <div class="winnings">
+    <div class="result winBox">
+      <div class="pickContainer">
+        <span class="pickText"><strong>You:</strong> </span><span id="userPick"></span>
       </div>
-      <div class="scores winBox">
-        <h3>Score</h3>
-        <div class="userScore score-box">
-          User Score is now: <span id="userScore">0</span>
-        </div>
-        <div class="compScore score-box">
-          Computer Score is now: <span id="compScore">0</span>
-        </div>
+      <div class="pickContainer">
+        <span class="pickText"><strong>Computer:</strong> </span><span id="compPick"></span>
+      </div>
+      <div class="clearfix"></div>
+      <div class="resultContainer">
+        <span id="overallResult">Click to play!</span>
       </div>
     </div>
+    <div class="scores winBox">
+      <h3>Score</h3>
+      <div class="userScore score-box">
+        User Score is now: <span id="userScore">0</span>
+      </div>
+      <div class="compScore score-box">
+        Computer Score is now: <span id="compScore">0</span>
+      </div>
+    </div>
+  </div>
   </div>
   <script src="rps.js"></script>
 </body>
