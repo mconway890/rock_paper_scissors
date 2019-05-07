@@ -7,8 +7,11 @@ body {
   text-align: center;
 }
 
-.button-container {
+.button1-container, .button2-container, .button3-container {
   display: inline-flex;
+  position: relative;
+  text-align: center;
+  color: white;
 }
 
 .option button {
@@ -18,4 +21,16 @@ body {
 div.winnings {
   text-align: left;
   padding-top: 50px;
+}
+
+.centered-rock, .centered-paper, .centered-scissor {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: large;
+}
+
+.centered-scissor {
+  font-size: large;
 }
